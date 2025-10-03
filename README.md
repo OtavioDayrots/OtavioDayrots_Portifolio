@@ -9,11 +9,11 @@ Bem-vindo ao meu portfólio! Aqui você encontra uma coleção de projetos, estu
 ## 🖼️ Prévia
 Algumas capturas dos projetos destacados (as imagens estão em `public/Image`):
 
-![Find GitHub](public/Image/find_github.png)
-![Filmes DB](public/Image/filmesDB.png)
-![Galeria Voucher](public/Image/galeria_voucher.png)
-![Image Share](public/Image/image_share.png)
-![Energy](public/Image/energy.png)
+<img src="public/Image/find_github.png" alt="Find GitHub" width="320">
+<img src="public/Image/filmesDB.png" alt="Filmes DB" width="320">
+<img src="public/Image/galeria_voucher.png" alt="Galeria Voucher" width="320">
+<img src="public/Image/image_share.png" alt="Image Share" width="320">
+<img src="public/Image/energy.png" alt="Energy" width="320">
 
 ## 🧰 Tecnologias e Recursos
 - HTML5 semântico
