@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#6366f1",
-        secondary: "#8b5cf6",
-        accent: "#06b6d4",
-        success: "#10b981",
+        primary: "#1E40AF",    // Azul marinho
+        secondary: "#374151",  // Cinza médio
+        accent: "#059669",     // Verde esmeralda
+        success: "#10b981",    // Verde (mantido)
+        tech: "#DC2626",       // Vermelho coral para tecnologias
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

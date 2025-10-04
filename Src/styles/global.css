@@ -22,10 +22,10 @@
 
 @keyframes glow {
     from {
-        box-shadow: 0 0 20px #6366f1;
+        box-shadow: 0 0 20px #1E40AF;
     }
     to {
-        box-shadow: 0 0 30px #8b5cf6, 0 0 40px #8b5cf6;
+        box-shadow: 0 0 30px #374151, 0 0 40px #059669;
     }
 }
 
@@ -51,7 +51,7 @@
 
 @keyframes blink {
     0%, 50% {
-        border-color: #6366f1;
+        border-color: #1E40AF;
     }
     51%, 100% {
         border-color: transparent;
@@ -60,7 +60,7 @@
 
 /* Classes customizadas */
 .gradient-text {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+    background: linear-gradient(135deg, #1E40AF, #374151, #059669);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
