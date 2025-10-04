@@ -18,14 +18,20 @@ Algumas capturas dos projetos destacados (as imagens estão em `public/Image`):
 ## 🧰 Tecnologias e Recursos
 - HTML5 semântico
 - CSS3
-- Utilitários ao estilo Tailwind (`Src/styles/tailwindglobal.js`)
+- **Tailwind CSS v3.4** (configuração local otimizada)
 - JavaScript (client-side)
+- Node.js & npm (para build do Tailwind)
+- PostCSS & Autoprefixer
 
 ## 📁 Estrutura do Projeto
 ```text
 D:\GitHub\Portifolio\
   ├─ index.html
+  ├─ package.json
+  ├─ tailwind.config.js
+  ├─ postcss.config.js
   ├─ public\
+  │  ├─ styles.css (gerado automaticamente)
   │  └─ Image\
   │     ├─ energy.png
   │     ├─ filmesDB.png
@@ -34,24 +40,55 @@ D:\GitHub\Portifolio\
   │     └─ image_share.png
   └─ Src\
      ├─ styles\
-     │  ├─ global.css
-     │  └─ tailwindglobal.js
+     │  └─ global.css (CSS de entrada com @tailwind)
      └─ views\
         └─ contato.html
 ```
 
-- `index.html`: página principal do portfólio.
-- `Src/styles/global.css`: estilos globais adicionais.
-- `Src/styles/tailwindglobal.js`: utilitários/ajustes no estilo Tailwind para composição rápida de estilos.
-- `Src/views/contato.html`: página/section de contato.
-- `public/Image`: assets estáticos (imagens de prévia dos projetos).
+- `index.html`: página principal do portfólio
+- `package.json`: dependências e scripts do projeto
+- `tailwind.config.js`: configuração do Tailwind CSS
+- `postcss.config.js`: configuração do PostCSS
+- `Src/styles/global.css`: CSS de entrada com diretivas Tailwind e estilos customizados
+- `Src/views/contato.html`: página de contato
+- `public/styles.css`: CSS final otimizado (gerado automaticamente)
+- `public/Image`: assets estáticos (imagens de prévia dos projetos)
 
 ## ▶️ Como rodar localmente
-- Opção 1 (rápida): clique duas vezes em `index.html` para abrir no navegador.
-- Opção 2 (recomendada): use um servidor local (ex.: extensão Live Server do VS Code)
-  1. Abra a pasta do projeto no VS Code
-  2. Instale/ative o Live Server
-  3. Clique em “Go Live” e acesse o endereço exibido (geralmente `http://127.0.0.1:5500/`)
+
+### Pré-requisitos
+- Node.js instalado
+- npm (vem com o Node.js)
+
+### Instalação e execução
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/OtavioDayrots/Portifolio.git
+   cd Portifolio
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Gere o CSS para produção:**
+   ```bash
+   npm run build-css
+   ```
+
+4. **Para desenvolvimento (monitora mudanças):**
+   ```bash
+   npm run watch-css
+   ```
+
+5. **Abra no navegador:**
+   - Opção 1: Clique duas vezes em `index.html`
+   - Opção 2: Use Live Server no VS Code (recomendado)
+
+### Scripts disponíveis
+- `npm run build-css`: Gera CSS otimizado para produção
+- `npm run watch-css`: Monitora mudanças e atualiza CSS automaticamente
 
 ## 🧭 Navegação e Conteúdo
 - Seções do `index.html` apresentam projetos com imagens, descrições e links.
@@ -63,24 +100,37 @@ D:\GitHub\Portifolio\
 - Metadados básicos (título, descrição) e uso criterioso de headings
 
 ## 🚀 Deploy (GitHub Pages)
-1. Faça commit e push para a branch `main`
-2. No GitHub, acesse Settings → Pages
-3. Em “Build and deployment”, selecione “Deploy from a branch”
-4. Branch: `main`, pasta `/root` e salve
-5. Aguarde a publicação e atualize o link na seção “Demo”
+1. **Gere o CSS para produção:**
+   ```bash
+   npm run build-css
+   ```
+
+2. **Faça commit e push:**
+   ```bash
+   git add .
+   git commit -m "Update portfolio"
+   git push origin main
+   ```
+
+3. **Configure o GitHub Pages:**
+   - No GitHub, acesse Settings → Pages
+   - Em "Build and deployment", selecione "Deploy from a branch"
+   - Branch: `main`, pasta `/root` e salve
+
+4. **Aguarde a publicação** e atualize o link na seção "Demo"
+
+> **Importante:** Sempre rode `npm run build-css` antes de fazer deploy para garantir que o CSS esteja atualizado!
 
 ## 🤝 Contribuição
 - Sugestões e melhorias são bem-vindas via Issues e Pull Requests
 - Para alterações maiores, descreva sua proposta antes de abrir o PR
 
 ## 📫 Contato
-- Substitua pelos seus canais preferidos:
-  - Email: seu.email@exemplo.com
-  - LinkedIn: https://www.linkedin.com/in/joseotaviodayrots
-  - GitHub: https://github.com/OtavioDayrots
-
-## 📄 Licença
-No momento este repositório não possui uma licença explícita. Caso deseje reutilizar conteúdo/código, por favor, abra uma Issue para alinharmos a melhor forma de uso.
+- **Email:** joseotavioalves321@gmail.com
+- **WhatsApp:** (67) 98115-5987
+- **LinkedIn:** [linkedin.com/in/joseotaviodayrots](https://www.linkedin.com/in/joseotaviodayrots)
+- **GitHub:** [github.com/OtavioDayrots](https://github.com/OtavioDayrots)
+- **Instagram:** [@tavio_vieira](https://www.instagram.com/tavio_vieira)
 
 ---
 Se este portfólio foi útil ou inspirador, considere deixar uma estrela no repositório!
